@@ -1,2 +1,68 @@
-.Rproj.user
-docs
+# Mostly from template for R, but might need specific adjustments for an R package repo ... 
+# so, still work in progress ...
+
+# General history and session files
+.Rhistory
+.Rapp.history
+.RData
+.RDataTmp
+.Ruserdata
+
+# RStudio files
+.Rproj.user/
+*.Rproj
+
+# Example code in package build process
+*-Ex.R
+
+# Output files from R CMD build and check
+/*.tar.gz
+/*.Rcheck/
+
+# knitr and R Markdown default cache and temporary files
+*_cache/
+/cache/
+*.utf8.md
+*.knit.md
+
+# Vignettes (only if generated dynamically)
+# ignored, assuming these are generated dynamically. If I pre-build them, the remove these lines!
+vignettes/*.html
+vignettes/*.pdf
+
+# pkgdown site (remove if docs/ is used for something else)
+#docs/  # planning in using this directory for package documentation (pkgdown website)
+
+# OAuth tokens and environment variables
+.httr-oauth
+.Renviron
+
+# Translation and temporary files
+po/*~
+
+# RStudio Connect folder (for Shiny stuff)
+rsconnect/
+
+# Quarto files (if reports are generated from Quarto Markdown)
+*.nb.html
+*.qmd.cache/
+*.qmd/
+
+
+# Temporary output or intermediate files (adjust as needed)
+*.log
+*.tmp
+*.csv
+*.xlsx
+
+# Ignore renv folder (if ever using renv for dependency management ...)
+renv/
+renv.lock
+
+
+
+# Ignore all "old" folders (where I drop old versions of plots or scripts)
+# ** = any number of directories
+# final / = ignore entire directory (without it will ignore files and folders with that name)
+**/old/
+**/ignore/
